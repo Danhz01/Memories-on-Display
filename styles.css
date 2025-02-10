@@ -16,7 +16,9 @@ body {
     width: 90%;
     margin: 0 auto;
 }
-
+.logo {
+    color:#2D336B;
+}
 h1, h2 {
     color: #333;
 }
