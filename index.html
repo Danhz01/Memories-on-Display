@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories on Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Memories On Display</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Photography Portfolio</h2>
+            <p class="color">Capturing life's poetry, pixel by pixel</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Photography Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="photo1.jpg" alt="Photo 1" onclick="openLightbox();currentSlide(1)">
+            </div>
+            <div class="gallery-item">
+                <img src="photo2.jpg" alt="Photo 2" onclick="openLightbox();currentSlide(2)">
+            </div>
+            <div class="gallery-item">
+                <img src="photo3.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(3)">
+            </div>
+            <div class="gallery-item">
+                <img src="photo4.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(4)">
+            </div>
+            <div class="gallery-item">
+                <img src="photo5.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(5)">
+            </div> <div class="gallery-item">
+                <img src="photo6.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(6)">
+            </div> <div class="gallery-item">
+                <img src="photo7.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(7)">
+            </div>
+              <div class="gallery-item">
+            <img src="photo8.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(8)">
+        </div>
+    <div class="gallery-item">
+        <img src="photo9.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(9)">
+         </div>
+         <div class="gallery-item">
+    <img src="photo10.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(10)">
+      </div>
+            <!-- Add more photos as needed -->
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Lightbox Image">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!--<section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+    <form
+  action="https://formspree.io/f/xovjlznz"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Memories on Display | All Rights Reserved, All photos on this site are owned by Memories on Display</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
